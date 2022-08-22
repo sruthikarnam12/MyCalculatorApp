@@ -7,9 +7,24 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/button"
+        android:layout_width="112dp"
+        android:layout_height="98dp"
+        android:backgroundTint="@color/lightBlue"
+        android:text="/"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <Button
         android:id="@+id/button3"
         android:layout_width="112dp"
         android:layout_height="98dp"
+        android:backgroundTint="@color/lightBlue"
         android:text="*"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,6 +38,7 @@
         android:id="@+id/button4"
         android:layout_width="112dp"
         android:layout_height="98dp"
+        android:backgroundTint="@color/lightBlue"
         android:text="-"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,6 +52,7 @@
         android:id="@+id/button2"
         android:layout_width="112dp"
         android:layout_height="98dp"
+        android:backgroundTint="@color/lightBlue"
         android:text="+"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,6 +67,7 @@
         android:layout_width="357dp"
         android:layout_height="48dp"
         android:hint="hint"
+        android:textColor="@color/orange"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,16 +85,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.319" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="112dp"
-        android:layout_height="98dp"
-        android:text="/"
-        android:textSize="30sp"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
+        android:text="CALCULATOR"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57" />
+        app:layout_constraintVertical_bias="0.075" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
