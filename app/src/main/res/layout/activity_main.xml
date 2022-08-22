@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/division"
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.57" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/multiply"
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.873" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/subtract"
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
@@ -49,7 +49,7 @@
         app:layout_constraintVertical_bias="0.873" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/add"
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
