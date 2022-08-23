@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/division"
+        android:id="@+id/divide"
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
@@ -25,14 +25,14 @@
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
-        android:text="*"
+        android:text="x"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.873" />
+        app:layout_constraintVertical_bias="0.775" />
 
     <Button
         android:id="@+id/subtract"
@@ -46,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.873" />
+        app:layout_constraintVertical_bias="0.775" />
 
     <Button
         android:id="@+id/add"
@@ -66,8 +66,8 @@
         android:id="@+id/textInputEditText"
         android:layout_width="357dp"
         android:layout_height="48dp"
-        android:hint="hint"
-        android:textColor="@color/orange"
+        android:hint="type your equation"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +77,8 @@
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="310dp"
         android:layout_height="48dp"
-        android:hint="hint"
+        android:hint="your answer will appear"
+        android:textColor="@color/orange"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -98,6 +99,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075" />
+
+    <Button
+        android:id="@+id/findAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANSWER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
