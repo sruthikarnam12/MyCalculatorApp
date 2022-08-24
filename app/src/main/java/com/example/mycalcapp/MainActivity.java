@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
 
+        if(firstNum == null || secondNum == null){
+            System.out.println("Please input a second number.");
+        }
+
         int num1 = Integer.parseInt(firstNum.getText().toString());
         int num2 = Integer.parseInt(secondNum.getText().toString());
         int sum = num1 + num2;
@@ -73,5 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         sumOf.setText("" + sum);
     }
+
+    // want to make a clear text function tbh and then also enhance the over all look of the app
 
 }
