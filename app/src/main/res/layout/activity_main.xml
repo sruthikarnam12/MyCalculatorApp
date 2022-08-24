@@ -63,10 +63,10 @@
         app:layout_constraintVertical_bias="0.57" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
+        android:id="@+id/firstNum"
         android:layout_width="357dp"
         android:layout_height="48dp"
-        android:hint="type your equation"
+        android:hint="NUMBER 1"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,9 +75,10 @@
         app:layout_constraintVertical_bias="0.218" />
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/secondNum"
         android:layout_width="310dp"
         android:layout_height="48dp"
-        android:hint="your answer will appear"
+        android:hint="NUMBER 2"
         android:textColor="@color/orange"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,17 +101,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075" />
 
-    <Button
-        android:id="@+id/findAns"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ANSWER"
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="177dp"
+        android:layout_height="41dp"
+        android:text="result: "
+        android:textColor="@color/orange"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
-
+        app:layout_constraintVertical_bias="0.418" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
