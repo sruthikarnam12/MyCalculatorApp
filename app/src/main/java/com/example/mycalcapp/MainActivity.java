@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
 
+        //making sure the user has inputted 2 numbers
         if(firstNum == null || secondNum == null){
             System.out.println("Please input a second number.");
         }
@@ -42,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
 
+        //making sure the user has inputted 2 numbers
+        if(firstNum == null || secondNum == null){
+            System.out.println("Please input a second number.");
+        }
+
         int num1 = Integer.parseInt(firstNum.getText().toString());
         int num2 = Integer.parseInt(secondNum.getText().toString());
         int sum = num1 - num2;
@@ -57,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
 
+        //making sure the user has inputted 2 numbers
+        if(firstNum == null || secondNum == null){
+            System.out.println("Please input a second number.");
+        }
+
         int num1 = Integer.parseInt(firstNum.getText().toString());
         int num2 = Integer.parseInt(secondNum.getText().toString());
         int sum = num1 * num2;
@@ -70,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText firstNum = findViewById(R.id.firstNum);
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
+
+        //making sure the user has inputted 2 numbers
+        if(firstNum == null || secondNum == null){
+            System.out.println("Please input a second number.");
+        }
 
         double num1 = Integer.parseInt(firstNum.getText().toString());
         double num2 = Integer.parseInt(secondNum.getText().toString());
