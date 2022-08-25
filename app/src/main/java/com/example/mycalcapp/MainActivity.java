@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
 
-        //making sure the user has inputted 2 numbers
+        // making sure the user has inputted 2 numbers
         if(firstNum == null || secondNum == null){
             System.out.println("Please input a second number.");
         }
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
 
-        //making sure the user has inputted 2 numbers
+        // making sure the user has inputted 2 numbers
         if(firstNum == null || secondNum == null){
             System.out.println("Please input a second number.");
         }
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
 
-        //making sure the user has inputted 2 numbers
+        // making sure the user has inputted 2 numbers
         if(firstNum == null || secondNum == null){
             System.out.println("Please input a second number.");
         }
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
 
-        //making sure the user has inputted 2 numbers
+        // making sure the user has inputted 2 numbers
         if(firstNum == null || secondNum == null){
             System.out.println("Please input a second number.");
         }
@@ -95,5 +95,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // want to make a clear text function tbh and then also enhance the over all look of the app
+    // still need to add enhancements tonight
 
 }
