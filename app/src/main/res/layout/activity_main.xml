@@ -27,7 +27,7 @@
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
         android:text="x"
-        android:textSize="30sp"
+        android:textSize="23sp"
         android:onClick="findProduct"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
         android:backgroundTint="@color/lightBlue"
         android:onClick="findDifference"
         android:text="-"
-        android:textSize="30sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.742"
@@ -70,30 +70,30 @@
         android:id="@+id/firstNum"
         android:layout_width="128dp"
         android:layout_height="81dp"
+        android:foregroundGravity="bottom"
+        android:gravity="center"
         android:hint="NUMBER 1"
         android:inputType="number"
         android:textColor="@color/black"
-        android:gravity="center"
-        android:foregroundGravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintVertical_bias="0.221" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/secondNum"
         android:layout_width="132dp"
         android:layout_height="81dp"
+        android:foregroundGravity="bottom"
+        android:gravity="center"
         android:hint="NUMBER 2"
         android:inputType="number"
         android:textColor="@color/black"
-        android:gravity="center"
-        android:foregroundGravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.221" />
@@ -127,5 +127,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.379" />
+
+    <TextView
+        android:id="@+id/correctSign"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:text=""
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
