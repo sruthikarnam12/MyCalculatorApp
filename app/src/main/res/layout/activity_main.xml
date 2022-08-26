@@ -11,15 +11,15 @@
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
+        android:onClick="findQuotient"
         android:text="/"
         android:textSize="30sp"
-        android:onClick="findQuotient"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintHorizontal_bias="0.742"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57" />
+        app:layout_constraintVertical_bias="0.775" />
 
     <Button
         android:id="@+id/multiply"
@@ -41,63 +41,72 @@
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
+        android:onClick="findDifference"
         android:text="-"
         android:textSize="30sp"
-        android:onClick="findDifference"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintHorizontal_bias="0.742"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.775" />
+        app:layout_constraintVertical_bias="0.571" />
 
     <Button
         android:id="@+id/add"
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:backgroundTint="@color/lightBlue"
+        android:onClick="findSum"
         android:text="+"
         android:textSize="30sp"
-        android:onClick="findSum"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57" />
+        app:layout_constraintVertical_bias="0.571" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/firstNum"
-        android:layout_width="357dp"
-        android:layout_height="48dp"
+        android:layout_width="128dp"
+        android:layout_height="81dp"
         android:hint="NUMBER 1"
+        android:inputType="number"
         android:textColor="@color/black"
+        android:gravity="center"
+        android:foregroundGravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.222" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/secondNum"
-        android:layout_width="310dp"
-        android:layout_height="48dp"
+        android:layout_width="132dp"
+        android:layout_height="81dp"
         android:hint="NUMBER 2"
-        android:textColor="@color/orange"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:foregroundGravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319" />
+        app:layout_constraintVertical_bias="0.221" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="177dp"
-        android:layout_height="41dp"
+        android:layout_width="271dp"
+        android:layout_height="43dp"
+        android:gravity="center"
         android:text="@string/calculator_name"
         android:textColor="@color/orange"
-        android:textSize="25sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.56"
@@ -107,15 +116,16 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="177dp"
-        android:layout_height="41dp"
-        android:text="result: "
+        android:layout_width="349dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="RESULT "
         android:textColor="@color/orange"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.418" />
+        app:layout_constraintVertical_bias="0.379" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
