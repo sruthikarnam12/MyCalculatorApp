@@ -1,9 +1,10 @@
-package com.example.mycalcapp;
+package com.example.mycalculatorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -23,17 +24,37 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText firstNum = findViewById(R.id.firstNum);
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
+        TextView sign = findViewById(R.id.correctSign);
+
+        // all the buttons ID in order to change the colors once the division button is pressed
+        Button divisionSign = findViewById(R.id.divide);
+        Button multiplicationSign = findViewById(R.id.multiply);
+        Button additionSign = findViewById(R.id.add);
+        Button subtractionSign = findViewById(R.id.subtract);
 
         // making sure the user has inputted 2 numbers
-        if(firstNum == null || secondNum == null){
-            System.out.println("Please input a second number.");
+        if(firstNum.getText().toString().trim().length() == 0 || secondNum.getText().toString().trim().length() == 0){
+            sumOf.setText("Input both");
+        }
+        else {
+            // making them Integer values to be able to do math with them
+            double num1 = Integer.parseInt(firstNum.getText().toString());
+            double num2 = Integer.parseInt(secondNum.getText().toString());
+
+            double sum = num1 + num2;
+
+            sumOf.setText("" + sum);
         }
 
-        int num1 = Integer.parseInt(firstNum.getText().toString());
-        int num2 = Integer.parseInt(secondNum.getText().toString());
-        int sum = num1 + num2;
+        //changing the color of the sign that the user pressed and resetting others
+        divisionSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
+        multiplicationSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
+        additionSign.setBackgroundColor(getResources().getColor(R.color.orange));
+        subtractionSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
 
-        sumOf.setText("" + sum);
+        // set the correct sign for the operation the suer chose
+        sign.setText("+");
+
     }
 
     // this subtracts the 2 numbers that the user inputs in the calculator app.
@@ -42,17 +63,35 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText firstNum = findViewById(R.id.firstNum);
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
+        TextView sign = findViewById(R.id.correctSign);
+
+        // all the buttons ID in order to change the colors once the division button is pressed
+        Button divisionSign = findViewById(R.id.divide);
+        Button multiplicationSign = findViewById(R.id.multiply);
+        Button additionSign = findViewById(R.id.add);
+        Button subtractionSign = findViewById(R.id.subtract);
 
         // making sure the user has inputted 2 numbers
-        if(firstNum == null || secondNum == null){
-            System.out.println("Please input a second number.");
+        if(firstNum.getText().toString().trim().length() == 0 || secondNum.getText().toString().trim().length() == 0){
+            sumOf.setText("Input both");
+        }
+        else {
+
+            double num1 = Integer.parseInt(firstNum.getText().toString());
+            double num2 = Integer.parseInt(secondNum.getText().toString());
+            double sum = num1 - num2;
+
+            sumOf.setText("" + sum);
         }
 
-        int num1 = Integer.parseInt(firstNum.getText().toString());
-        int num2 = Integer.parseInt(secondNum.getText().toString());
-        int sum = num1 - num2;
+        //changing the color of the sign that the user pressed and resetting others
+        divisionSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
+        multiplicationSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
+        additionSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
+        subtractionSign.setBackgroundColor(getResources().getColor(R.color.orange));
 
-        sumOf.setText("" + sum);
+        // set the correct sign for the operation the suer chose
+        sign.setText("-");
     }
 
 
@@ -62,17 +101,34 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText firstNum = findViewById(R.id.firstNum);
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
+        TextView sign = findViewById(R.id.correctSign);
+
+        // all the buttons ID in order to change the colors once the division button is pressed
+        Button divisionSign = findViewById(R.id.divide);
+        Button multiplicationSign = findViewById(R.id.multiply);
+        Button additionSign = findViewById(R.id.add);
+        Button subtractionSign = findViewById(R.id.subtract);
 
         // making sure the user has inputted 2 numbers
-        if(firstNum == null || secondNum == null){
-            System.out.println("Please input a second number.");
+        if(firstNum.getText().toString().trim().length() == 0 || secondNum.getText().toString().trim().length() == 0){
+            sumOf.setText("Input both");
+        }
+        else {
+            double num1 = Integer.parseInt(firstNum.getText().toString());
+            double num2 = Integer.parseInt(secondNum.getText().toString());
+            double sum = num1 * num2;
+
+            sumOf.setText("" + sum);
         }
 
-        int num1 = Integer.parseInt(firstNum.getText().toString());
-        int num2 = Integer.parseInt(secondNum.getText().toString());
-        int sum = num1 * num2;
+        //changing the color of the sign that the user pressed and resetting others
+        divisionSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
+        multiplicationSign.setBackgroundColor(getResources().getColor(R.color.orange));
+        additionSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
+        subtractionSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
 
-        sumOf.setText("" + sum);
+        // set the correct sign for the operation the suer chose
+        sign.setText("x");
     }
 
     // this will divide the two numbers the user inputs together,
@@ -81,20 +137,37 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText firstNum = findViewById(R.id.firstNum);
         TextInputEditText secondNum = findViewById(R.id.secondNum);
         TextView sumOf = findViewById(R.id.result);
+        TextView sign = findViewById(R.id.correctSign);
+
+        // all the buttons ID in order to change the colors once the division button is pressed
+        Button divisionSign = findViewById(R.id.divide);
+        Button multiplicationSign = findViewById(R.id.multiply);
+        Button additionSign = findViewById(R.id.add);
+        Button subtractionSign = findViewById(R.id.subtract);
 
         // making sure the user has inputted 2 numbers
-        if(firstNum == null || secondNum == null){
-            System.out.println("Please input a second number.");
+        if(firstNum.getText().toString().trim().length() == 0 || secondNum.getText().toString().trim().length() == 0){
+            sumOf.setText("Input both");
+        }
+        else {
+            double num1 = Integer.parseInt(firstNum.getText().toString());
+            double num2 = Integer.parseInt(secondNum.getText().toString());
+            double sum = num1 / num2;
+
+            sumOf.setText("" + sum);
         }
 
-        double num1 = Integer.parseInt(firstNum.getText().toString());
-        double num2 = Integer.parseInt(secondNum.getText().toString());
-        double sum = num1 / num2;
+        //changing the color of the sign that the user pressed and resetting others
+        divisionSign.setBackgroundColor(getResources().getColor(R.color.orange));
+        multiplicationSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
+        additionSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
+        subtractionSign.setBackgroundColor(getResources().getColor(R.color.lightBlue));
 
-        sumOf.setText("" + sum);
+        // set the correct sign for the operation the suer chose
+        sign.setText("/");
     }
 
-    // want to make a clear text function tbh and then also enhance the over all look of the app
-    // still need to add enhancements tonight
+    // Citing:
+    // to change button colors : https://stackoverflow.com/questions/13842447/android-set-button-background-programmatically
 
 }
